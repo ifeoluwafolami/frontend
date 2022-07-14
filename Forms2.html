@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Boxed Up by HIF</title>
+    </head>
+
+    <body>
+        
+        <form action="test.txt" >
+            <label for="chooseagiftcategory">Choose a Gift Category!</label>
+            <select name="giftcategories" id="chooseagiftcategory" required>
+                <option value="giftcategories" disabled selected>Gift Categories</option>
+                <optgroup label="Less than 20,000 Naira!">
+                    <option value="mini gifts">Mini Gifts: Love Coupons, QR Code Cards, Note Jars</option>
+                    <option value="sugar baby">Sugar Baby: Treats in Gift Bags</option>
+                    <option value="small gestures">Small Gestures: Mini Gift-Set in Gift Bags</option>
+                    <option value="sweet heart">Sweet Heart: Treat Boxes</option>
+                </optgroup>
+                <optgroup label="Gift Boxes & Luxury Gifts">
+                    <option value="generis">Generis: Gift Boxes</option>
+                    <option value="fleur">Fleur: Floral Themed Gift Boxes</option>
+                    <option value="luxury">Luxury Gift-Sets: Five Senses, Open When</option>
+                </optgroup>
+            </select>
+
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>How do you like your gifts? Select at least one of the options below!</legend>
+                <input type="checkbox" id="thoughtful" name="option1" value="Thoughtful and Heartwarming!">
+                <label for="option1">Thoughtful and Heartwarming!</label> <br>
+                <input type="checkbox" id="dramatic" name="option2" value="Over-the-top Dramatic!"> 
+                <label for="option2">Over-the-top Dramatic!</label> <br>
+                <input type="checkbox" id="aesthetic" name="option3" value="Pretty AF!"> 
+                <label for="option3">Pretty AF!</label> <br>
+            </fieldset>
+            <br>
+            <br>
+
+            <datalist id="giftcategories">
+                <optgroup label="Less than 20,000 Naira!">
+                    <option value="Mini Gifts">Love Coupons, QR Code Cards, Note Jars</option>
+                    <option value="Sugar Baby">Treats in Gift Bags</option>
+                    <option value="Small Gestures">Mini Gift-Set in Gift Bags</option>
+                    <option value="Sweet Heart">Treat Boxes</option>
+                </optgroup>
+                <optgroup label="Gift Boxes & Luxury Gifts">
+                    <option value="Generis">Gift Boxes</option>
+                    <option value="Fleur">Floral Themed Gift Boxes</option>
+                    <option value="Luxury Gift-Sets">Five Senses, Open When</option>
+                </optgroup>
+            </datalist>
+            
+            <label for="giftcategorylist">Type in a gift category to see sample boxes!</label>
+            <input list="giftcategories" id="giftcategorylist" name="giftcategorylist">
+
+            <output> <!--result of calculation--> </output>
+
+        </form>
+
+
+
+
+    </body>
+
+
+
+</html>
