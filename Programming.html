@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Boxed Up by HIF</title>
+    </head>
+
+    <body>
+        <!-- Script tag is used to embed a client-side script 
+            (JavaScript)-->
+        <!--The element either contains scripting statements, or it points
+        to an external script file through the src attribute.
+        Common uses for JavaScript are image manipulation, form validation,
+        and dynamic changes of content.-->
+        <!--async attribute: specifies that the script is downloaded in
+        parallel to parsing the page and executed as soon as it is 
+        available (before parsing completes). This is only for external 
+        scripts.-->
+        <!--defer attr: specifies that it should be executed after parsing-->
+        <!--if neither are present, the script is fetched and executed 
+        immediately before the browser continues parsing the page.-->
+
+        <script type="text/javascript" src="js/my.js">
+        
+        </script>
+
+        <noscript>
+            <!--this defines alternate content for users that do not
+            support client-side scripts-->
+        </noscript>
+
+        <applet> <!--not supported in html5, use embed or object tag 
+            instead-->
+            <!--was used to embed plug-ins; which are computer programs
+            that extend the standard functionality of a browser.-->
+        </applet>
+
+        <embed src="" type="">
+            <!--this defines a container for an external non-HTML application
+            e.g. webpage, picture, media player or plug-in application. -->
+
+        <object data="" type="">
+            <!--defines an embedded object
+            originally designed to embed browser Plug-ins.
+            But now, most browsers no longer support Java Applets and
+            Plugins.-->
+        </object>
+
+        <!--To embed a picture, it is better to use the <img> tag.
+
+            To embed HTML, it is better to use the <iframe> tag.
+
+            To embed video or audio, it is better to use the <video> 
+            and <audio> tags.-->
+
+        <param name="" value="">
+        <!--defines the parameter for an object-->
+        
+        <object data="horse.wav">
+            <param name="autoplay" value="true">
+          </object>
+
+    </body>
+
+
+
+
+</html>
