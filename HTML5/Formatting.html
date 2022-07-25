@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Boxed Up by HIF</title>
+    </head>
+
+    <body>
+        <!--dfn tag :: definition element. It specifies a term that is
+        going to be defined within the content.-->
+        <p><dfn id="def-hif">HIF Events and Gifts</dfn> is a full-service Event Management
+            and Gift Curation brand.</p>
+        <br>
+        <br>
+        <br>
+
+        <acronym title="">
+            <!--not supported in html5.-->
+        </acronym>
+
+        <abbr title="World Health Organization">WHO
+            <!--defines an abbreviation or an acronym such as HTML, CSS.
+            Use the global title attribute to show the description for the
+            abbreviation or acronym when you mouse over the element.-->
+        </abbr>
+        <br>
+        <br>
+
+        <address>
+            <!--this defines contact information for the author or owner
+            of a document/article-->
+            <!--usually renders in italic-->
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+
+        <br>
+
+        <address>
+            <!--this defines contact information for the author or owner
+            of a document/article-->
+            <!--usually renders in italic-->
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+
+        <br>
+
+        <address>
+            <!--this defines contact information for the author or owner
+            of a document/article-->
+            <!--usually renders in italic-->
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+
+        <br>
+
+
+        <b>This is bold text.</b>
+        <!--makes text bold. Used as a last resort when no other tag
+        is more appropriate.-->
+
+        <bdi>
+            <!--Bi-Directional Isolation
+            It isolates a part of text that might be formatted in a 
+            different direction from other text outside it.
+            Super useful when embedding user-generated content with an 
+        unknown text direction.-->
+        </bdi>
+
+        <ul>
+            <li>User <bdi>hrefs</bdi>: 60 points</li>
+            <li>User <bdi>jdoe</bdi>: 80 points</li>
+            <li>User <bdi>إيان</bdi>: 90 points</li>
+        </ul>
+
+        <bdo dir=""><!--Bi Directional Override--></bdo>
+        <!--used to override the current text direction.-->
+
+        <bdo dir="rtl">
+            This text will go right-to-left.
+        </bdo>
+
+        <big>
+            <!--not supported in HTML5, was used to define bigger text-->
+        </big>
+
+        <blockquote cite="www.google.com">
+            <!--this specifies a section that is quoted from another source.
+            Browsers usually indent blockquote elements.-->
+            <!--cite refers to the source url-->
+            For 50 years, WWF has been protecting the future of nature. 
+            The world's leading conservation organization, WWF works in 100 
+            countries and is supported by 1.2 million members in the United 
+            States and close to 5 million globally.
+        </blockquote>
+
+        <q>
+            <!--used for inline (short) quotations; inserts quotation marks-->
+        </q>
+
+        <br>
+
+        Hi, everyone. The whole point of this is <q>thisssssss</q> and
+        nothing more.
+
+        <center>
+            <!--not supported in html5, but it worksssss.
+            it defines center text.-->
+            This is center.
+        </center>
+
+        <cite>
+            <!--defines the title of a work.
+            Renders in italic.-->
+        </cite>
+
+        <p>Our subject of discussion today is: 
+            <cite>The Corpses of the De Witt Brothers</cite> 
+            by Jan de Bean.
+        </p>
+
+        <code><!--defines text as computer code--></code>
+        <code>import pymongo <br>
+            from pymongo import MongoClient
+        </code>
+
+        <p>My favourite color is <del>pink</del> black, like my soul.</p>
+        <!--del tag :: strikethrough-->
+
+
+
+        <!--using dfn's id tag means you can refer back to it with <a> tag.-->
+        <p>Trust <a href="#def-hif">HIF</a> to deliver a stress-free and memorable
+        experience!</p>
+
+
+        <em>
+            <!--used to define emphasized text. Content inside is typically
+            displayed in italic.-->
+        </em>
+
+        <p><em>Seriously,</em> like have you seen my silhouette? 
+            <em>Sheesh!</em></p>
+
+        <font>
+            <!--not supported in html5.-->
+        </font>
+
+        <i>
+            <!--this defines a part of text in an alternate voice or mood.
+            content is displayed in italic.
+            Use i tag only when there is not a more appropriate semantic element
+            such as em, strong, mark, cite or dfn.-->
+        </i>
+
+        <p><i>Hello there,</i> and welcome to <strong>CavernCast.</strong></p>
+
+        <ins> <!--this defines a text that has been inserted into a 
+        document. Browsers will usually underline inserted text.--></ins>
+
+        <p>My surname is <del>Folami</del> <ins>Folami-Ayileye.</ins></p>
+        <!--cite attribute for ins is used to specify a URL to a document
+        that explains the reason why the text was inserted/changed.
+        datetime attribute specifies when the text was inserted/changed.-->
+
+        <kbd>
+            <!--used to define keyboard input.
+            content inside is displayed in the browser's default monospace
+            font.-->
+        </kbd>
+
+        <p>Say hello to my computer, <kbd>Hephzibah.</kbd></p>
+
+        <mark>
+            <!--defines text that should be marked or highlighted.-->
+        </mark>
+
+        <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+        <meter>
+            <!--defines a scalar measurement within a knoown range, or
+            a fractional value. Also known as a gauge.
+            Note that this tag should not be used to indicate progress
+            (as in a progress bar). For progress bars, use the progress 
+            tag.-->
+        </meter>
+
+        <br>
+
+        <label for="disk_c">Disk Usage C: </label>
+        <meter id="disk_c" value="20" min="0" max="100" low="25" high="75"></meter> <br>
+
+        <label for="disk_d">Disk Usage D: </label>
+        <meter id="disk_d" value="60" min="0" max="100" low="25" high="75"></meter> <br>
+
+        <label for="disk_e">Disk Usage E: </label>
+        <meter id="disk_e" value="90" min="0" max="100" low="25" high="75"></meter> <br>
+
+        <br>
+        <br>
+
+        <pre>
+            <!--defines preformatted text.-->
+            <!--Text in enclosed in pre tags is dispayed in a fixed-width
+            font, and the text preserves both spaces and line breaks.
+            The text will be displayed exactly as written in the HTML source
+            code.-->
+            Hi there,
+            Welcome to <strong>CavernCast.</strong>
+        </pre>
+
+        <q>
+            <!--defines a short quotation-->
+            <!--Browsers insert quotation marks around the quotation.-->
+            <!--use blockquote for long quotations.-->
+        </q>
+        
+        <p>You can call me <q>Daddy's Little Girl</q>.</p>
+
+        <ruby>
+            <!--specifies a ruby annotation.-->
+            <!--A ruby annotation is a small extra text, 
+            attached to the main text to indicate the pronunciation 
+            or meaning of the corresponding characters. This kind of 
+            annotation is often used in Japanese publications.-->
+        </ruby>
+
+        <rt>
+            <!--defines an explanation or pronunciation of characters
+            (for East Asian typography) in a ruby annotation.-->
+        </rt>
+
+        <rp>
+            <!--used to provided parentheses around a ruby text, to be
+            shown by browsers that do not support ruby annotations.-->
+        </rp>
+
+        <s>
+            <!--specifies text that is no longer correct, accurate or 
+            relevant. The text will be displayed with a line through it.
+            It should not be used to define deleted text, use <del> tag
+            for that.-->
+            Hello, it's me.
+        </s>
+
+        <br>
+
+        <samp>
+            <!--used to define sample output from a computer program.
+            Content is displayed in the browser's default monospace font.-->
+            Sample Text, anyone?
+        </samp>
+
+        <br>
+
+        <small>
+            <!--defines small text-->
+            small text matter too.
+        </small>
+
+        <br>
+
+        <strike>
+            <!--not supported in html5-->
+        </strike>
+
+        <p>you think you have <strong>strong head</strong>?</p>
+
+        <strong>
+            <!--defines text with strong importance. displayed in bold.-->
+        </strong>
+
+        <sub>
+            <!--defines subscripted text.-->
+        </sub>
+
+        <br>
+
+        <p>Dayo Ayileye is a <sub>sub</sub>.</p>
+
+        <p>I am a <sup>superb</sup> human.</p>
+
+        <template>
+            <!--used as a container to hold some HTML content hidden
+            from the user when the page loads.
+            Its content can be rendered later with a JavaScript.-->
+            Hi there. Can you see this?
+        </template>
+
+        <time datetime="2000-11-23">Valentine's Day</time>
+        <!--time tag defines a specific time (or datetime).-->
+        <!--Datetime attribute has no output in browser.-->
+        <!--The datetime attribute of this element is used 
+        to translate the time into a machine-readable format 
+        so that browsers can offer to add date reminders through 
+        the user's calendar, and search engines can produce smarter 
+        search results.-->
+
+        <tt>
+            <!--not supported in HTML5-->
+        </tt>
+
+        <u>
+            <!--this represents some text that is unarticulated and styled
+            differently from normal text, such as misspelled words or proper
+            names in Chinese text. Displayed with an underline.-->
+            <!--Avoid using the <u> tag where it could be confused for a 
+            hyperlink.-->
+        </u>
+
+        <p>Hey there, <u>sunbae</u>.</p>
+
+        <var>
+            <!--used to define a variable in programming, or in a
+            mathematical expression. Usually displayed in italic.-->
+        </var>
+
+        <p>Area = 0.5 * <var>b</var> * <var>h</var></p>
+
+        <wbr> <!--this specifies where in a text it would be okay to add a
+        line break. When a word is too long, the browser might break it at
+        the wrong place. You can use the <wbr> element to add word break 
+        opportunities.-->
+
+        <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryvery
+        veryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>
+        placeswhenthebrowserwindowisresized.</p>
+
+
+
+    </body>
+
+</html>
