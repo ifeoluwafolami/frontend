@@ -7,14 +7,35 @@ pages all at once.
 
 External stylesheets are stored in CSS files */
 
-h1 {
-    color: #f0a1b4;
-}
 
-h2 {
-    color: rgb(100, 195, 0)
-}
 
 body {
     font-family: 'Square Peg', cursive;
+    font-size: 50px;
+}
+
+i.material-icons {
+    background-color: black;
+    color: white;
+    font-size: 100px;
+}
+
+a:link {
+    color : blueviolet;
+}
+
+a:visited {
+    color : red;
+}
+
+a:hover {
+    color : black;
+}
+
+a:active {
+    color : blue;
+}
+
+ul {
+    list-style-type:lower-roman;
 }
